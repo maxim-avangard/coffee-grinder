@@ -136,6 +136,7 @@ export async function addSlide(event) {
   const replaceMap = {
     '{{title}}': title,
     '{{summary}}': event.summary ?? '',
+    '{{facts}}': event.facts ?? '', // Фактологический анализ по новости, берется у нейронки
     '{{sqk}}': event.sqk ?? '',
     '{{priority}}': event.priority ?? '',
     '{{notes}}': event.notes ?? ''
