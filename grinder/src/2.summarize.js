@@ -66,6 +66,7 @@ export async function summarize() {
 				e.priority ||= res.priority
 				e.titleRu ||= res.titleRu
 				e.summary = res.summary
+				e.facts = res.facts
 				e.aiTopic = topicsMap[res.topic]
 				e.aiPriority = res.priority
 			}
